@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Data Visualization: Fast Food and ZIP Code</title>
+    <title>Data Visualization: Static U.S. MPG </title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -75,7 +75,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">Data Visualization
-                    <small>Fast Food & ZIP Code</small>
+                    <small>Static U.S. MPG </small>
                 </h1>
             </div>
         </div>
@@ -83,7 +83,7 @@
 
         <!-- Portfolio Item Row -->
         <div class="row">
-
+			<!--Portfolio Item Image Carousel -->
             <div class="col-md-8">
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
 				<!-- Indicators -->
@@ -91,22 +91,31 @@
 						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 						<li data-target="#myCarousel" data-slide-to="1"></li>
 						<li data-target="#myCarousel" data-slide-to="2"></li>
+						<li data-target="#myCarousel" data-slide-to="3"></li>
+						<li data-target="#myCarousel" data-slide-to="4"></li>
 					</ol>
 
 					<!-- Wrapper for slides -->
 					<div class="carousel-inner" role="listbox">
 						<div class="item active">
-							<img src="./img/portfolio/fastfoodZIP_plot1.png" class="img-responsive"alt="Fast Food and ZIP Plot 1">
+							<img src="./img/portfolio/staticMPG_plot1.png" alt="Static MPG Plot 1">
 						</div>
 
 						<div class="item">
-							<img src="./img/portfolio/fastfoodZIP_plot2.png" class="img-responsive"alt="Fast Food and ZIP Plot 2">
+							<img src="./img/portfolio/staticMPG_plot2.png" alt="Static MPG Plot 2">
 						</div>
 
 						<div class="item">
-						  <img src="./img/portfolio/fastfoodZIP_plot3.png" class="img-responsive"alt="Fast Food and ZIP Plot 3">
+						  <img src="./img/portfolio/staticMPG_plot3.png" alt="Static MPG Plot 3">
+						</div>
+
+						<div class="item">
+						  <img src="./img/portfolio/staticMPG_plot4.png" alt="Static MPG Plot 4">
 						</div>
 						
+						<div class="item">
+						  <img src="./img/portfolio/staticMPG_plot5.png" alt="Static MPG Plot 5">
+						</div>
 					</div>
 
 				  <!-- Left and right controls -->
@@ -123,16 +132,18 @@
 
             <div class="col-md-4">
                 <h3>Project Description</h3>
-                <p>This was the third Data Visualization project I did for my Elements of Data Visualization computer science course. There are a total of 3 plots in this project. These visualizations are the result of joining two datasets on the common ZIP code field present in both. The first dataset comes from <a href="http://fastfoodmaps.com/">Fast Food Maps</a>, a website created to show all restaruant locations of the top ten fast food chains in America. The data is from the summer of 2007. The second dataset comes from the University of Michigan’s <a href="http://www.psc.isr.umich.edu/dis/census/Features/tract2zip/">Population Studies Center</a>. The dataset originally came from the 2010 <a href="http://www.census.gov/programs-surveys/acs/about.html">American Community Survey</a> and the Center stripped out all of the columns except ZIP, POP, MEAN, and MEDIAN salaries. I worked collaboratively on this project with my partner, <a href="https://www.facebook.com/profile.php?id=100007411659318&fref=ts">Chenchao Zhang</a>.</p>
+                <p>This was the fourth Data Visualization project I did for my Elements of Data Visualization computer science course. There are a total of 5 plots in this project. The datasets come from the Environmental Projection Agency's <a href="https://www.fueleconomy.gov/feg/download.shtml">Fuel Economy Data</a>, which contains data on almost 37,000 different vehciles with many attributes to analyze. There was also a dataset called Car_Sales that contained the total number of cars sold in the U.S. from 1984 to 2014, which can be found at <a href="http://www.statista.com/statistics/199974/us-car-sales-since-1951/">this website</a>. There was an intermediate step that required Tableau, but these are the R versions of the graphs.  I worked collaboratively on this project with my partner, <a href="https://www.facebook.com/profile.php?id=100007411659318&fref=ts">Chenchao Zhang</a>.</p>
                 <h3>Project Details</h3>
                 <ul>
-                    <li>Plot 1: Influence of a ZIP Codes Wealth on the Total Number of Fast Food Restaurants located in that ZIP Code</li>
-                    <li>Plot 2: Influence of Population Density on the Total Number of Fast Food Restaurants</li>
-                    <li>Plot 3: Predicting Total Number of Fast Food Restaurants using Population</li>
+                    <li>Plot 1: Average MPG of Vehicles for each Type of Transmission</li>
+                    <li>Plot 2: Combined MPG of All Vehicles since 1984</li>
+                    <li>Plot 3: KPI: MPG to Passenger Volumn Ratio for 2 door cars since 1984</li>
+                    <li>Plot 4: KPI: MPG to Passenger Volumn Ratio fo 4 door cars since 1984</li>
+					<li>Plot 5: Relationship between Vehicles tested and Sales of Cars in U.S.</li>
                 </ul>
 				<h3>Interesting Observations</h3>
-				<p>Plot 1 uses median salary as a proxy for the wealth of the ZIP Code. By looking at the ZIP codes with the top and bottom 10 percent of wealth, this plot shows that ZIP Codes who have the middle 80% of wealth (median salary is between $40,000 and $80,000) also have the most total number of fast food restaurants. The second plot confirmed the hypothesis that the more people that lived in a ZIP code, the more fast food restaurants would be located in that ZIP code. The interesting part was how stark that trend was: on average, the least populated ZIP codes had slightly above one restaurant while the most populated ZIP codes had more than 10 restaurants. The last plot includes a two variable polynomial trendline to see if it was possible to predict total fast food restaurants in a ZIP code given the ZIP codes population. The trendline shows that after roughly 80,000 people live in a ZIP code, the number of fast food locations not only levels off, but the trend suggests that the number of locations actually decreases. 
-				<h3><a href="./projects/FastFoodZIP.html">Project Documentation</a></h3>
+				<p>Plot 1 showed that automatic transmissions produces a higher average MPG than a manual transmission car, which goes against the conventional wisdom that manual cars have better gas mileage. Plot 2 showed that while the overall long term trend of the average MPG of model year cars has increased over the years, there are periods of time where the average MPG actually decreases, most notablly between 1998 to 2003 which coincidentally occurs with low prices of gasoline. Plot 3 uses a Key Performance Indicator (KPI) to demostrate what manufacturers produced 2 door cars that were efficient (high combined MPG) and spacious (measured by vehicle passenger volumn). The fourth plot uses a Key Performance Indicator (KPI) to show what manufacturers have a portfolio of 4 door cars that were efficent and spacious. The last plot showed that while the EPA has only managed to roughly test the same number of vehciles from 2009-2014, the number of vehicles sold in the U.S. during that time has increased nearly 50%.
+				<h3><a href="./projects/StaticMPG.html">Project Documentation</a></h3>
             </div>
 
         </div>
@@ -156,7 +167,7 @@
 											Academic Project
 										</div>
 										<div class="project-name">
-											Data Visualization: RMS Titanic
+											Data Visualization: Titanic
 										</div>
 									</div>
 								</div>
@@ -171,22 +182,22 @@
 											Academic Project
 										</div>
 										<div class="project-name">
-											Data Visualization: Fast Food Restaurant Location and ZIP Code
+											Data Visualization: Health Insurance and Hours Worked by Wives 
 										</div>
 									</div>
 								</div>
 							</a>
 						</div>
 						<div class="col-lg-3 col-sm-6">
-							<a href="./project_staticMPG.html" class="portfolio-box">
-								<img src="img/portfolio/4.png" class="img-responsive" height="500" width="300" alt="">
+							<a href="./project_fastfoodZIP.html" class="portfolio-box">
+								<img src="img/portfolio/3.png" class="img-responsive" height="500" width="300" alt="">
 								<div class="portfolio-box-caption">
 									<div class="portfolio-box-caption-content">
 										<div class="project-category text-faded">
 											Academic Project
 										</div>
 										<div class="project-name">
-											Data Visualization: Static U.S. MPG Data
+											Data Visualization: Fast Food Restaurant Location and ZIP Code
 										</div>
 									</div>
 								</div>
