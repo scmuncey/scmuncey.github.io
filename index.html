@@ -73,10 +73,10 @@
 
     <header>
         <div class="header-content">
-            <div class="header-content-inner">
+            <div class="header-content-inner" style="color:black;">
                 <h1>Welcome to my website!</h1>
                 <hr>
-                <p>This is a place for me to post all of the various technology projects I have worked on and share it with everybody! My hope is that this site will be updated regularly as I have time to do more projects. </p>
+                <p style="color:black;">This is a place for me to post all of the various technology projects I have worked on and share it with everybody! My hope is that this site will be updated regularly as I have time to do more projects. </p>
                 <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More About Me</a>
             </div>
         </div>
@@ -91,7 +91,7 @@
 					<img class="img-responsive img-rounded" src="./img/SCM.jpg" height="200" width="300"alt="Spencer Muncey">
 					</div>
 					<div class="col-lg-8 ">
-                    <p class="text-faded">I am currently a second semester senior at the <a href="http://www.utexas.edu/">University of Texas at Austin</a> and look forward to starting my first full-time job at <a href="http://www.ni.com/en-us.html">National Instruments</a> as a Programmer Analyst in June of 2016. I have a huge passion for working with data and love working through large datasets to find interesting trends and correlations. This passion was influenced and encouraged by my former boss and mentor, <a href="https://www.linkedin.com/in/keshava-rangarajan-abab391">Keshava Rangarajan</a>. I am happily engaged to my fianc&#233;e Sara and excited to see where my professional career takes me!</p>
+                    <p class="text-faded">I am currently a Programmer Analyst at <a href="http://www.ni.com/en-us.html">National Instruments</a>. My current role is part of the Global Single Instance team, which is tasked with taking two seperate database instances and merging them into one. Outside of work, my passion for working with data to find interesting trends and correlations keeps me pretty occupied. This passion was influenced and encouraged by a former boss and mentor, <a href="https://www.linkedin.com/in/keshava-rangarajan-abab391">Keshava Rangarajan</a>. I am happily engaged to my fianc&#233;e Sara and excited to see where my professional career takes me!</p>
 					<br>
 					<h2 class="section-heading">Education and Skills</h2>
 					<ul class="text-faded">
@@ -116,27 +116,43 @@
             </div>
         </div>
         <div class="container">
+			<div class="row">
+				<!--National Instruments Full Time-->
+                <div class="text-left">
+                    <div class="service-box">
+                        <img class="img-responsive img-rounded" src="./img/experience/NI_logo.JPG"alt="National Instruments">
+                        <h3>June 2016 to Present - Programmer Analyst at National Instruments </h3>
+                        <p class="text-muted">
+						<ul>
+							<li>Global Single Instance Team Member</li>
+							<li>Responsible for migrating custom code from two database instances to one global database instance </li>
+							<li>Exposure to change management, refactoring code, and implementing user enhancement requests</li>
+							<li>Developing cross-functional communication and teamwork skills</li>
+						</ul>
+						</p>
+                    </div>
+                </div>
             <div class="row">
-				<!--National Instruments Experience-->
+				<!--National Instruments Intern Experience-->
                 <div class="col-lg-7 col-md-7 text-left">
                     <div class="service-box">
                         <img class="img-responsive img-rounded" src="./img/experience/NI_logo.JPG"alt="National Instruments">
                         <h3>Summer 2015 - Intern at National Instruments </h3>
                         <p class="text-muted">
 						<ul>
-						<li>Conducted extensive research on database regression testing, Oracle Enterprise Manager, and Oracle SQL Performance Analyzer tool</li>
-						<li>Worked with business managers to determine database critical path processes and frequency</li>
-						<li>Created global object naming standards and execution policies for database administration team to follow when using the tool</li>
-						<li>Worked with Global Release Manager to determine how the tool would fit into the global release schedule.</li>
-						<li>Executed the tool on seven production and seven test/development databases</li>
-						<li>Communicated the results of the seven analysis reports to database administration team and business managers</li>
-						<li>Synthesized knowledge into online workflow manual</li>
-<li>Trained members of database administration team on how to implement tool in future quarterly databases patching and upgrades</li>
-</ul>
+							<li>Conducted extensive research on database regression testing, Oracle Enterprise Manager, and Oracle SQL Performance Analyzer tool</li>
+							<li>Worked with business managers to determine database critical path processes and frequency</li>
+							<li>Created global object naming standards and execution policies for database administration team to follow when using the tool</li>
+							<li>Worked with Global Release Manager to determine how the tool would fit into the global release schedule.</li>
+							<li>Executed the tool on seven production and seven test/development databases</li>
+							<li>Communicated the results of the seven analysis reports to database administration team and business managers</li>
+							<li>Synthesized knowledge into online workflow manual</li>
+							<li>Trained members of database administration team on how to implement tool in future quarterly databases patching and upgrades</li>
+						</ul>
 						</p>
                     </div>
                 </div>
-                <!--Halliburton Experience-->
+                <!--Halliburton Intern Experience-->
 				<div class="col-lg-5 col-md-7 text-left">
                     <div class="service-box">
                         <img class="img-responsive img-rounded" src="./img/experience/HAL_logo.png"alt="Halliburton">
@@ -175,7 +191,7 @@
             <div class="row no-gutter">
                 <div class="col-lg-4 col-sm-6">
                     <a href="./project_titanic.html" class="portfolio-box">
-                        <img src="img/portfolio/1.png" class="img-responsive" height="650" width="350" alt="">
+                        <img src="img/portfolio/1.png" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
@@ -249,7 +265,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="./projects/FinalProject.html" class="portfolio-box">
+                    <a href="./projects/project_fastfoodSalesZIP.html" class="portfolio-box">
                         <img src="img/portfolio/6.png" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -258,36 +274,6 @@
                                 </div>
                                 <div class="project-name">
                                     Data Visualization: Fast Food Location, ZIP Codes, and Franchise Revenue
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/7.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Academic Project
-                                </div>
-                                <div class="project-name">
-                                    Web Development: Salary Comparison Website
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/8.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Academic Project
-                                </div>
-                                <div class="project-name">
-                                    Mobile Computing: Andriod Application
                                 </div>
                             </div>
                         </div>
@@ -312,7 +298,7 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Let's Get In Touch!</h2>
                     <hr class="primary">
-                    <p>Have a comment, question, or need someone to help out with a project that you have? Feel free to reach out to me!</p>
+                    <p>Have a comment, question, or need help with a project that you have? Feel free to reach out to me!</p>
                 </div>
                 
                 <div class="col-lg-12 text-center">
